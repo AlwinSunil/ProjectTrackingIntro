@@ -1,3 +1,12 @@
+const screenWidth = screen.width;
+console.log(screenWidth);
+
+window.onload = function () {
+  warningBanner();
+  window.scrollTo(0, 0);
+  document.getElementById("loader-wrapper").style.opacity = "0";
+};
+
 function navbarToggle() {
   document.getElementById("nav-mobile").style.display = "flex";
   document.getElementById("hamburger").style.display = "none";
@@ -9,14 +18,6 @@ function navbarClose() {
   document.getElementById("hamburger").style.display = "block";
   document.getElementById("close").style.display = "none";
 }
-
-const screenWidth = screen.width;
-console.log(screenWidth);
-
-window.onload = function () {
-  warningBanner();
-  window.scrollTo(0, 0);
-};
 
 function warningBanner() {
   document.getElementById("warning-banner").style.display = "block";
