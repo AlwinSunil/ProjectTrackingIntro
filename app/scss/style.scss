@@ -1,0 +1,350 @@
+*,
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  color: #242942;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.main-content h2 {
+  width: 80%;
+}
+
+.main-p {
+  width: 70%;
+}
+
+.watermark {
+  opacity: 100%;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+.watermark strong {
+  font-weight: 400;
+}
+
+.watermark a {
+  font-size: 1.15rem !important;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #242942 !important;
+  opacity: 100% !important;
+}
+
+@media screen and (min-width: 750px) {
+  .warning-banner {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    z-index: 3;
+    background-color: #dc2626;
+    text-align: center;
+    padding: 2vh 0vh;
+    transition: all 0.4s ease-in-out;
+  }
+  #warning-banner-p {
+    color: #f2f2f2;
+    display: none;
+    opacity: 100%;
+    font-size: 2.5vh;
+    transition: all 0.4s ease-out;
+  }
+  #warning-banner-dismiss-btn {
+    display: none;
+    padding-top: 0.2vh;
+  }
+  .container {
+    padding: 0 10vw;
+    position: absolute;
+    z-index: 2;
+  }
+  nav {
+    display: flex;
+    padding: 2vh 0vh;
+  }
+  li {
+    list-style: none;
+  }
+  .nav-logo-il {
+    padding: 0.75rem;
+  }
+  .nav-items {
+    display: flex;
+    margin-left: auto;
+    padding: 0.5rem;
+  }
+  .nav-item {
+    padding: 2vh;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .login-button {
+    border-left: 3px solid #f2f2f2;
+    opacity: 55%;
+  }
+  #hamburger {
+    display: none;
+  }
+  #close {
+    display: none;
+  }
+  .hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .hero-img {
+    display: flex;
+    float: right;
+    width: 50%;
+    height: 90vh;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .hero-img img {
+    width: 170%;
+    padding: 5vh 0vh;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .hero-content {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .element {
+    display: flex;
+  }
+  .element-blob {
+    background-color: #242942;
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+  }
+  .element-tittle {
+    padding: 0.3rem 0.5rem;
+    font-weight: 400;
+    opacity: 80%;
+  }
+  .main-content h2 {
+    font-weight: 700 !important;
+    padding: 1rem 0 1.5rem 0;
+    font-size: 3rem;
+  }
+  .main-p {
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    opacity: 80%;
+  }
+  .element-grey {
+    background-color: #eef3f6;
+    height: 60vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 0 0 0 4rem;
+  }
+  .element-button {
+    display: flex;
+    flex-direction: row;
+  }
+  .btn-demo {
+    padding: 0.7rem 0.8rem 0.8rem 0.8rem;
+    color: #ffffff;
+    background-color: #ff5c5c;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 35%;
+    margin-right: 0.75rem;
+    border: 0px;
+  }
+  button:hover {
+    background-color: #fc4646;
+  }
+  button:focus {
+    outline: 0px;
+  }
+  .preview {
+    padding: 0.5rem;
+    opacity: 60% !important;
+    width: 35%;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .warning-banner {
+    position: relative;
+    display: none;
+    z-index: 3;
+    background-color: #dc2626;
+    text-align: center;
+    padding: 2vh 7vw;
+    height: 0px;
+    transition: all 0.4s linear;
+  }
+  #warning-banner-p {
+    color: #f2f2f2;
+    display: none;
+    position: relative;
+    opacity: 100%;
+    font-size: 2.5vh;
+    transition: all 0.4s ease-out;
+  }
+  #warning-banner-dismiss-btn {
+    display: none;
+    padding-top: 1vh;
+  }
+  .container {
+    z-index: 6;
+    padding: 0 7vw 7vw 10vw;
+    position: absolute;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    list-style: none;
+  }
+  .nav-logo-ul {
+    padding: 1.5rem 0.5rem;
+  }
+  .nav-logo-il {
+    display: flex;
+  }
+  #hamburger {
+    display: block;
+  }
+  .hamburger {
+    margin-left: auto;
+    padding: 1.25vh;
+  }
+  #close {
+    display: none;
+  }
+  .close {
+    margin-left: auto;
+    padding: 0.9vh;
+  }
+  #nav-mobile {
+    display: none;
+  }
+  .nav-items {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 0.6px 2.7px rgba(0, 0, 0, 0.022),
+      0 1.5px 6.9px rgba(0, 0, 0, 0.031), 0 3px 14.2px rgba(0, 0, 0, 0.039),
+      0 6.2px 29.2px rgba(0, 0, 0, 0.048), 0 17px 80px rgba(0, 0, 0, 0.07);
+  }
+  .nav-item {
+    padding: 2vh 25vw;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .login-button {
+    border-top: 2px solid #f2f2f2;
+    opacity: 55%;
+  }
+  .hero-img {
+    padding: 4rem 0 4rem 0;
+  }
+  .hero-img img {
+    width: 150%;
+  }
+  .hero-content {
+    text-transform: uppercase;
+  }
+  .element {
+    display: flex;
+    padding: 0.5rem 0;
+  }
+  .element-blob {
+    background-color: #242942;
+    color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .element-tittle {
+    padding: 0.3rem 0.5rem;
+    font-weight: 400;
+    opacity: 80%;
+  }
+  .main-content h2 {
+    font-weight: 700 !important;
+    padding: 1rem 0 1.5rem 0;
+  }
+  .main-p {
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    opacity: 80%;
+  }
+  .element-button {
+    display: flex;
+  }
+  .element-grey {
+    background-color: #eef3f6;
+    height: 26rem;
+    width: 12rem;
+    top: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    border-radius: 0 0 0 4rem;
+  }
+  .btn-demo {
+    padding: 0.5rem;
+    color: #ffffff;
+    background-color: #ff5c5c;
+    border-radius: 0.5rem;
+    width: 50%;
+    margin-right: 0.75rem;
+    border: 0px;
+  }
+  button:hover {
+    background-color: #fc4646;
+  }
+  button:focus {
+    outline: 0px;
+  }
+  .preview {
+    padding: 0.5rem;
+    opacity: 60% !important;
+    width: 50%;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/jpg" href="app/img/favicon.png">
+    <title>Project Tracking Intro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="/dist/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="warning-banner" id="warning-banner">
+        <p id="warning-banner-p">This website is just a mockup, these services DOESN'T EXIST !!</p>
+        <a id="warning-banner-dismiss-btn" href="#" onclick="fadeIn()">Close</a>
+    </div>
+    <div class="container">
+        <nav>
+            <ul class="nav-logo-ul">
+                <li class="nav-logo-il">
+                    <img src="app/img/logo.svg" alt="Logo" class="logo">
+                    <img src="app/img/icon-hamburger.svg" alt="Menu" class="hamburger" id="hamburger"
+                        onclick="navbarToggle()">
+                    <img src="app/img/icon-close.svg" alt="Menu" class="close" id="close" onclick="navbarClose()">
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="nav-items">
+                <li class="nav-item">Product</li>
+                <li class="nav-item">Features</li>
+                <li class="nav-item">Pricing</li>
+                <li class="nav-item login-button">Login</li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-img">
+                <img src="app/img/illustration-devices.svg" alt="Illustration">
+            </div>
+            <div class="hero-content">
+                <div class="element">
+                    <p class="element-blob">New</p>
+                    <p class="element-tittle"> Monograph Dashboard</p>
+                </div>
+                <div class="main-content">
+                    <h2>Powerful insights into your team</h2>
+                    <p class="main-p">Project planning and time tracking for agile teams</p>
+                    <div class="element-button">
+                        <button class="btn-demo">SCHEDULE A DEMO</button>
+                        <p class="preview">TO SEE PREVIEW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="watermark"><strong>Created by </strong><a target="_blank" rel="noreferrer"
+                href="https://alwinsunil.github.io/profile/">Alwin Sunil</a></p>
+    </div>
+    <div class="element-grey"></div>
+
+    <script src="/app/js/script.js"></script>
+</body>
+
+</html>
