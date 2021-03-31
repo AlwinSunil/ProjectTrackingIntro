@@ -21,7 +21,7 @@ function navbarClose() {
 }
 
 function warningBanner() {
-  document.getElementById("warning-banner").style.display = "block";
+  document.getElementById("warning-banner").style.display = "flex";
   if (screenWidth < 750) {
     setTimeout(() => {
       document.getElementById("warning-banner").style.height = "10vh";
